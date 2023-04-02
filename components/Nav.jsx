@@ -5,7 +5,7 @@ import navLink from '@/Data/navData';
 const Nav = () => {
   return (
     
-    <div className='text-white flex '>
+    <div className='text-white flex  '>
              <div className='w-[16rem] mt-[2rem] ml-10 mr-[47rem] '>       
                  <Image src={Logo} />  
              </div>

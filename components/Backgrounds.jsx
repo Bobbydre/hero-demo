@@ -1,20 +1,25 @@
 import React from 'react';
 import Image from 'next/image';
+import backgrounds from '@/Data/backgroundData';
 
 const Backgrounds = () => {
-  return (
-    <div className='relative'>
-        <div className='absolute left-[400px] top-[-420px] z-10'>
-            <Image src='/Globe.svg' width= '500' height= '500' /> 
-        </div>
-        <div className='absolute top-[-330px]'>
-             <Image src='/Ellipse.svg' width= '1300' height= '1300' /> 
-        </div>
-        <div className='absolute left-[400px] top-[-10px] z-50'>
-             <Image src='/Ellipse.svg' width= '500' height= '500' /> 
-        </div>
-    </div>
-  )
-}
-
-export default Backgrounds
+    return (
+      <div className='relative'>
+        {backgrounds.map((bg, index) => (
+          <div
+            key={index}
+            className={bg.position}
+            style={{
+              left: bg.left,
+              top: bg.top,
+              zIndex: bg.zIndex,
+            }}
+          >
+            <Image src={bg.src} width={bg.width} height={bg.height} />
+          </div>
+        ))}
+      </div>
+    );
+  };
+  
+  export default Backgrounds;

@@ -8,7 +8,7 @@ const Cards = () => {
   return (
 
    <div className='flex flex-row items-center justify-end gap-x-8  text-white relative'>
-         {images.map(({nftName, tokenPrice, priceLabel, time, timeLabel, nft}) => (
+         {images.map(({nftName, tokenPrice, priceLabel, time, timeLabel, nft, top, left}) => (
             <div className='bg-black py-2 px-3 w-[10rem] h-[15rem] border border-black rounded-[1rem] z-50 '> 
             <div>
             <Image src={nft} width= '200' height= '200' /> 
@@ -33,17 +33,7 @@ const Cards = () => {
 
    
     </div>
-    // <div className=''>
-    //          <div className=''>       
-    //              <Image src={Logo} />  
-    //          </div>
-    //     {images.map(({links}) => (
-           
 
-
-    //      ))}
-       
-    // </div>
   )
 }
 

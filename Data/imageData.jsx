@@ -6,7 +6,9 @@ const images = [
       tokenPrice: '7.22ETH',
       priceLabel: 'Current Price',
       time: '82: 17: 26',
-      timeLabel: 'Hours Minute Sec'
+      timeLabel: 'Hours Minute Sec',
+      top: '210px',
+      left: '950px'
   }, 
   {
       id: 2,
@@ -15,7 +17,9 @@ const images = [
       tokenPrice: '7.22ETH',
       priceLabel: 'Current Price',
       time: '82: 17: 26',
-      timeLabel: 'Hours Minute Sec'
+      timeLabel: 'Hours Minute Sec',
+      top: '-150px',
+      left: '1065px'
   }, 
   {
       id: 3,
@@ -24,7 +28,9 @@ const images = [
       tokenPrice: '7.22ETH',
       priceLabel: 'Current Price',
       time: '82: 17: 26',
-      timeLabel: 'Hours Minute Sec'
+      timeLabel: 'Hours Minute Sec',
+      top: '-350px',
+      left: '1200px'
   },    
   
 ]

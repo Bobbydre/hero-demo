@@ -5,5 +5,11 @@
 @layer base {
   html {
     @apply bg-background;
+    @apply overflow-hidden
   }
+}
+
+.fullscreen {
+  height: 100%;
+  width: 100%;
 }
